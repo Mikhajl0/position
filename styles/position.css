@@ -4,20 +4,22 @@
 
 .card-flowers {
     position: relative;
+    overflow: hidden;
 }
 
 .card-hover {
-    display: none;
+    display: flex;
     justify-content: center;
     gap: 27px;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 7px;
+    bottom: -37px;
+    transition: 1s;
 }
 
 .card:hover .card-hover {
-    display: flex;
+    bottom: 7px;
 }
 
 .card-button {
@@ -38,4 +40,17 @@
 
 .card:hover::before {
     display: block;
+}
+
+.bar-text {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    background-color: #46A358;
+    padding: 7px 8px 6px 9px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    z-index: 2;
 }
