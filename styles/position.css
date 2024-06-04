@@ -1,0 +1,41 @@
+.card {
+    position: relative;
+}
+
+.card-flowers {
+    position: relative;
+}
+
+.card-hover {
+    display: none;
+    justify-content: center;
+    gap: 27px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7px;
+}
+
+.card:hover .card-hover {
+    display: flex;
+}
+
+.card-button {
+    border: none;
+}
+
+.card::before {
+    content: "";
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.card:hover::before {
+    display: block;
+}
